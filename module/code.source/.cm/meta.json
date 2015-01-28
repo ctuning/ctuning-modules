@@ -1,7 +1,7 @@
 {
-  "license": "See CK LICENSE.txt for licensing details", 
+  "actions": {}, 
   "desc": "cTuning benchmark", 
   "copyright": "See CK Copyright.txt for copyright details", 
-  "actions": {}, 
+  "license": "See CK LICENSE.txt for licensing details", 
   "developer": "Grigori Fursin"
 }

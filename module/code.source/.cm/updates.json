@@ -8,6 +8,48 @@
         "4113"
       ], 
       "iso_datetime": "2014-12-06T15:37:32.878000"
+    }, 
+    {
+      "engine": "CK", 
+      "license": "See CK LICENSE.txt for licensing details", 
+      "iso_datetime": "2014-12-16T11:35:53.723000", 
+      "copyright": "See CK Copyright.txt for copyright details", 
+      "author": "Grigori Fursin", 
+      "author_email": "Grigori.Fursin@cTuning.org", 
+      "version": [
+        "1", 
+        "0", 
+        "1214"
+      ], 
+      "author_webpage": "http://cTuning.org/lab/people/gfursin"
+    }, 
+    {
+      "engine": "CK", 
+      "license": "See CK LICENSE.txt for licensing details", 
+      "iso_datetime": "2014-12-16T11:36:53.300000", 
+      "copyright": "See CK Copyright.txt for copyright details", 
+      "author": "Grigori Fursin", 
+      "author_email": "Grigori.Fursin@cTuning.org", 
+      "version": [
+        "1", 
+        "0", 
+        "1214"
+      ], 
+      "author_webpage": "http://cTuning.org/lab/people/gfursin"
+    }, 
+    {
+      "engine": "CK", 
+      "license": "See CK LICENSE.txt for licensing details", 
+      "iso_datetime": "2014-12-16T11:46:53.764000", 
+      "copyright": "See CK Copyright.txt for copyright details", 
+      "author": "Grigori Fursin", 
+      "author_email": "Grigori.Fursin@cTuning.org", 
+      "version": [
+        "1", 
+        "0", 
+        "1214"
+      ], 
+      "author_webpage": "http://cTuning.org/lab/people/gfursin"
     }
   ]
 }
