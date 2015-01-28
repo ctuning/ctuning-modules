@@ -1,0 +1,255 @@
+{
+  "install_script_py_prefix": "python", 
+  "obj_dir": "obj", 
+  "install_dir": "install", 
+  "install_script": "install", 
+  "minimal_setup_for_download": "yes", 
+  "cm_common_actions": [], 
+  "license": "cM 1.x license", 
+  "cm_module_py_dir": "", 
+  "cm_modules": {
+    "ctuning.setup": "b8a7418f9c701002", 
+    "code": "688dee2e7014f1fb", 
+    "ctuning.scenario": "aaa8e4766b0351e8", 
+    "system": "c0977f94653a6a1c", 
+    "code.source": "45741e3fbcf4024b", 
+    "cm-core": "9ac54cef3d7caa8a", 
+    "cm-web": "f0d8604c7abf6aee", 
+    "os": "b9735a270ba455c3", 
+    "class": "58014c9c91d6d101", 
+    "processor": "41a0bd4f09be3d16"
+  }, 
+  "dependencies_file": "cm_code_dependencies.txt", 
+  "cm_classes": {
+    "compiler": "72f81bd39f84ed89"
+  }, 
+  "cm_actions": [
+    {
+      "params_default": {}, 
+      "params": "", 
+      "cm_index": "install", 
+      "func": "install", 
+      "desc": "install cM package"
+    }, 
+    {
+      "params_default": {}, 
+      "params": "", 
+      "cm_index": "installed", 
+      "func": "installed", 
+      "desc": "view installed packages"
+    }, 
+    {
+      "params_default": {}, 
+      "cm_index": "web_install", 
+      "params": "", 
+      "func": "web_install", 
+      "params_desc": {
+        "##compilation_type": {
+          "default_value": "static", 
+          "skip_form_refresh": "yes", 
+          "sort_index": "52", 
+          "desc_text": "Compilation type", 
+          "has_choice": "yes", 
+          "choice": [
+            "static", 
+            "dynamic"
+          ], 
+          "type": "text"
+        }, 
+        "##compiler_code_uoa": {
+          "title_before": "Additional build parameters", 
+          "cm_classes_uoa": [
+            "72f81bd39f84ed89"
+          ], 
+          "start_new_column": "yes", 
+          "force_select_first": "yes", 
+          "sort_index": "40", 
+          "desc_text": "Compiler", 
+          "cm_class_dependencies_from_data": {
+            "##run_target_processor_uoa": {
+              "cm_module_uoa": "41a0bd4f09be3d16", 
+              "cm_key": "target_processor"
+            }, 
+            "##run_host_os_uoa": {
+              "cm_module_uoa": "b9735a270ba455c3", 
+              "cm_key": "host_os"
+            }, 
+            "##build_target_os_uoa": {
+              "cm_module_uoa": "b9735a270ba455c3", 
+              "cm_key": "target_os"
+            }
+          }, 
+          "cm_module_uoa": "688dee2e7014f1fb", 
+          "type": "uoa"
+        }, 
+        "##number_of_parallel_jobs_for_build": {
+          "default_value": "1", 
+          "sort_index": "80", 
+          "desc_text": "Number of parallel jobs for build (if supported)", 
+          "has_choice": "yes", 
+          "choice": [
+            "1", 
+            "2", 
+            "3", 
+            "4", 
+            "5", 
+            "6", 
+            "7", 
+            "8"
+          ], 
+          "type": "integer"
+        }, 
+        "##keep_all_files": {
+          "default_value": "no", 
+          "sort_index": "83", 
+          "desc_text": "Keep all produced files", 
+          "has_choice": "yes", 
+          "choice": [
+            "yes", 
+            "no"
+          ], 
+          "type": "text"
+        }, 
+        "##package_host_os_uoa": {
+          "data_from_other_data": {
+            "cm_sub_key": "##cm_choices#cm_host_os_uoa", 
+            "cm_module_uoa": "b8a7418f9c701002", 
+            "cm_key": "##ctuning_setup_uoa"
+          }, 
+          "force_select_first": "yes", 
+          "sort_index": "5", 
+          "desc_text": "Host OS", 
+          "cm_module_uoa": "b9735a270ba455c3", 
+          "type": "uoa"
+        }, 
+        "##run_target_processor_uoa": {
+          "data_from_other_data": {
+            "cm_sub_key": "##cm_choices#run_target_processor_uoa", 
+            "cm_module_uoa": "b8a7418f9c701002", 
+            "cm_key": "##ctuning_setup_uoa"
+          }, 
+          "force_select_first": "yes", 
+          "sort_index": "15", 
+          "desc_text": "Target processor", 
+          "cm_module_uoa": "41a0bd4f09be3d16", 
+          "type": "uoa"
+        }, 
+        "##build_target_os_uoa": {
+          "data_from_other_data": {
+            "cm_sub_key": "##cm_choices#cm_target_os_uoa", 
+            "cm_module_uoa": "b8a7418f9c701002", 
+            "cm_key": "##ctuning_setup_uoa"
+          }, 
+          "force_select_first": "yes", 
+          "sort_index": "10", 
+          "desc_text": "Target OS", 
+          "cm_module_uoa": "b9735a270ba455c3", 
+          "type": "uoa"
+        }, 
+        "##ctuning_setup_uoa": {
+          "title_before": "Customize", 
+          "cm_module_uoa": "b8a7418f9c701002", 
+          "type": "uoa", 
+          "desc_text": "collective tuning setup", 
+          "sort_index": "1"
+        }, 
+        "##skip_extract_and_build": {
+          "default_value": "no", 
+          "title_before": "Misc package parameters", 
+          "sort_index": "70", 
+          "desc_text": "Skip extract and build (refresh mode)", 
+          "has_choice": "yes", 
+          "choice": [
+            "no", 
+            "yes"
+          ], 
+          "type": "text"
+        }, 
+        "##package_repo_uoa": {
+          "default_value": "ctuning-setup", 
+          "cm_module_uoa": "b59ada2b6842a6c8", 
+          "type": "uoa", 
+          "desc_text": "Install repository", 
+          "sort_index": "20"
+        }
+      }, 
+      "desc": "install/monitor cM packages through web"
+    }
+  ], 
+  "cm_class_compiler": "72f81bd39f84ed89", 
+  "install_script_py_ext": ".py", 
+  "cm_data_description": {
+    "##add_to_code_source": {
+      "desc_text": "add following parameters to the installation code entry", 
+      "type": "dict", 
+      "dict_type": "free"
+    }, 
+    "##authors": {
+      "type_next": "values", 
+      "desc_text": "authors", 
+      "sort_index": "5", 
+      "type": "list", 
+      "skip_next_desc": "yes"
+    }, 
+    "##title": {
+      "desc_text": "package title", 
+      "type": "text", 
+      "sort_index": "1"
+    }, 
+    "##date_released": {
+      "desc_text": "Date when released (ISO)", 
+      "type": "iso_datetime", 
+      "sort_index": "14"
+    }, 
+    "##url": {
+      "desc_text": "package URL", 
+      "type": "url", 
+      "sort_index": "10"
+    }, 
+    "##license": {
+      "default_value": "cM 1.x license", 
+      "desc_text": "package license", 
+      "type": "textarea", 
+      "sort_index": "15"
+    }, 
+    "##date_development_started": {
+      "desc_text": "Date when development started (ISO)", 
+      "type": "iso_datetime", 
+      "sort_index": "12"
+    }, 
+    "##build": {
+      "default_value": "no", 
+      "sort_index": "20", 
+      "desc_text": "build package?", 
+      "has_choice": "yes", 
+      "choice": [
+        "no", 
+        "yes"
+      ], 
+      "type": "text"
+    }, 
+    "##date_development_finished": {
+      "desc_text": "Date when development finished (ISO)", 
+      "type": "iso_datetime", 
+      "sort_index": "13"
+    }, 
+    "##install_script": {
+      "desc_text": "filename of install script (without extension); leave empty if no script", 
+      "type": "text", 
+      "sort_index": "25"
+    }, 
+    "##authors@$": {
+      "cm_module_uoa": "b0743a4044480ead", 
+      "type": "uoa"
+    }
+  }, 
+  "authors": [
+    "0728a400aa1c86fe"
+  ], 
+  "url_module": "", 
+  "cm_module_py_ext": "module", 
+  "source_classes_to_install": [
+    "914178a17c102fb5", 
+    "7834e958464669af"
+  ]
+}

@@ -1,5 +1,4 @@
 {
-  "license": "cM 1.x license", 
   "cm_actions": [
     {
       "params_default": "", 
@@ -65,7 +64,7 @@
       "desc": "native run with timing"
     }
   ], 
-  "cm_common_actions": [], 
+  "license": "cM 1.x license", 
   "calming_delay": "1", 
   "cm_module_py_dir": "", 
   "cm_modules": {
@@ -76,31 +75,13 @@
     "processor": "41a0bd4f09be3d16", 
     "cm-core": "9ac54cef3d7caa8a"
   }, 
-  "powered_by": {
-    "version": "1.0.1977.beta", 
-    "name": "Collective Mind Engine"
-  }, 
-  "cm_access_control": {
-    "read_groups": "registered", 
-    "comments_groups": "admin", 
-    "write_groups": "admin"
-  }, 
-  "cm_data_description": {}, 
-  "cm_description": "any binary code or scripts", 
-  "cm_display_as_alias": "code", 
   "cm_env_prefix": "cm_code_env_", 
+  "cm_data_description": {}, 
   "cm_batch_script_ext": "tmp-cm-run-", 
   "authors": [
     "0728a400aa1c86fe"
   ], 
   "url_module": "", 
-  "cm_updated": [
-    {
-      "cm_iso_datetime": "2012-04-06T21:42:01.204000", 
-      "cm_note": "", 
-      "cm_module_uid": "5fa7f671fd112e70", 
-      "cm_user_uoa": "0728a400aa1c86fe"
-    }
-  ], 
-  "cm_module_py_ext": "module"
+  "cm_module_py_ext": "module", 
+  "cm_common_actions": []
 }

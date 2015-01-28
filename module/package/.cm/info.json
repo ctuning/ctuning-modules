@@ -8,21 +8,21 @@
     "author_uoa": "0728a400aa1c86fe", 
     "version": [], 
     "author_webpage": "http://cTuning.org/lab/people/gfursin", 
-    "iso_datetime": "2012-04-06T21:42:01.204000"
+    "iso_datetime": "2012-04-13T17:11:05.931000"
   }, 
-  "description": "any binary code or scripts", 
+  "description": "cM packages", 
   "backup_module_uid": "e9a4bb5e10b91e40", 
   "cm_outdated": {
+    "cm_access_control": {
+      "read_groups": "all", 
+      "comments_groups": "admin", 
+      "write_groups": "admin"
+    }, 
     "powered_by": {
       "version": "1.0.1977.beta", 
       "name": "Collective Mind Engine"
-    }, 
-    "cm_access_control": {
-      "read_groups": "registered", 
-      "comments_groups": "admin", 
-      "write_groups": "admin"
     }
   }, 
-  "data_name": "code", 
+  "data_name": "package", 
   "backup_module_uoa": "module"
 }
